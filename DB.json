@@ -1,0 +1,50 @@
+[
+    {
+      "pic": 0,
+      "name": "Pomme du Sahel",
+      "price": 1000,
+      "description": "description 0"
+    },
+    { 
+      "pic": 1,
+      "name": "Dattier", 
+      "price": 750,
+      "description": "description 1" 
+    },
+    { 
+      "pic": 2,
+      "name": "Manguier",
+      "price": 1000,
+      "description": "description 2" 
+    },
+    { 
+      "pic": 3,
+      "name": "Citronier",
+      "price": 750,
+      "description": "description 3" 
+    },
+    { 
+      "pic": 4,
+      "name": "Jujibier",
+      "price": 600,
+      "description": "description 4" 
+    },
+    { 
+      "pic": 5,
+      "name": "Moringa",
+      "price": 500,
+      "description": "description 5" 
+    },
+    { 
+      "pic": 6,
+      "name": "Papayer",
+      "price": 1500,
+      "description": "description 6" 
+    },
+    {
+      "pic": 7,
+      "name": "Manguier Greffé",
+      "price": 1000,
+      "description": "description 7"
+    }
+  ]
