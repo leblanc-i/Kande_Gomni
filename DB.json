@@ -1,50 +1,50 @@
 [
-    {
-      "pic": 0,
-      "name": "Pomme du Sahel",
-      "price": 1000,
-      "description": "description 0"
-    },
-    { 
-      "pic": 1,
-      "name": "Dattier", 
-      "price": 750,
-      "description": "description 1" 
-    },
-    { 
-      "pic": 2,
-      "name": "Manguier",
-      "price": 1000,
-      "description": "description 2" 
-    },
-    { 
-      "pic": 3,
-      "name": "Citronier",
-      "price": 750,
-      "description": "description 3" 
-    },
-    { 
-      "pic": 4,
-      "name": "Jujibier",
-      "price": 600,
-      "description": "description 4" 
-    },
-    { 
-      "pic": 5,
-      "name": "Moringa",
-      "price": 500,
-      "description": "description 5" 
-    },
-    { 
-      "pic": 6,
-      "name": "Papayer",
-      "price": 1500,
-      "description": "description 6" 
-    },
-    {
-      "pic": 7,
-      "name": "Manguier Greffé",
-      "price": 1000,
-      "description": "description 7"
-    }
-  ]
+  {
+    "pic": 0,
+    "name": "Pomme du Sahel",
+    "price": 1000,
+    "description": "La pomme du Sahel, ou jujubier du Sahel (Ziziphus mauritiana), est une plante aux nombreux bienfaits nutritionnels et médicinaux. Ses fruits sont riches en vitamines C et A, en antioxydants, en fibres, en calcium et en fer, renforçant le système immunitaire et améliorant la digestion. Les feuilles et les fruits ont des propriétés anti-inflammatoires et antimicrobiennes, utilisés pour traiter les infections et les inflammations. Les graines ont des effets calmants et sédatifs, aidant à traiter l'insomnie et l'anxiété. En médecine traditionnelle, les fruits sont utilisés pour améliorer la digestion et traiter les troubles digestifs. En cuisine, ils sont consommés frais, séchés, ou transformés en confitures et autres préparations. Malgré ses bienfaits, il est recommandé de consulter un professionnel de santé avant un usage thérapeutique."
+  },
+  {
+    "pic": 1,
+    "name": "Dattier",
+    "price": 750,
+    "description": "Le dattier, connu pour ses fruits sucrés appelés dattes, offre de nombreuses propriétés bénéfiques. Les dattes sont riches en vitamines A, B et K, ainsi qu'en minéraux comme le potassium, le magnésium et le fer, favorisant la santé cardiaque, la digestion et l'énergie. Elles contiennent des fibres et des antioxydants, aidant à réguler la glycémie et à combattre les radicaux libres. Les dattes ont des propriétés anti-inflammatoires et antimicrobiennes. En médecine traditionnelle, elles sont utilisées pour traiter la constipation, les troubles digestifs et renforcer le système immunitaire. En cuisine, les dattes sont consommées fraîches ou séchées, et utilisées dans de nombreux plats sucrés et salés. Comme pour toute plante, une consultation médicale est recommandée avant un usage thérapeutique."
+  },
+  {
+    "pic": 2,
+    "name": "Manguier",
+    "price": 1000,
+    "description": "Le manguier, célèbre pour ses fruits délicieux et nutritifs, possède de nombreuses propriétés bénéfiques. Les mangues sont riches en vitamines A, C, et E, ainsi qu'en fibres et en antioxydants, aidant à renforcer le système immunitaire, améliorer la digestion et la santé de la peau. Les feuilles de manguier ont des propriétés anti-inflammatoires et antidiabétiques. L'écorce et les racines sont utilisées en médecine traditionnelle pour traiter des infections, des inflammations, et des troubles digestifs. Les graines de mangue contiennent des composés aux effets antimicrobiens et antiparasitaires. En cuisine, la mangue est consommée fraîche, séchée, ou utilisée dans des jus et des desserts. Avant d'utiliser le manguier à des fins thérapeutiques, il est conseillé de consulter un professionnel de santé."
+  },
+  {
+    "pic": 3,
+    "name": "Citronier",
+    "price": 750,
+    "description": "Le citronnier, connu pour ses fruits acides et nutritifs, a de nombreuses propriétés bénéfiques. Les citrons sont riches en vitamine C, antioxydants, et flavonoïdes, renforçant le système immunitaire, améliorant la digestion, et aidant à prévenir les infections. Le jus de citron est utilisé pour ses propriétés détoxifiantes et alcalinisantes. Les feuilles et l'écorce du citronnier possèdent des huiles essentielles avec des effets antimicrobiens et anti-inflammatoires. Utilisé en médecine traditionnelle, le citron aide à traiter les maux de gorge, les troubles digestifs, et les infections cutanées. En cuisine, le citron est utilisé pour son jus, son zeste, et son arôme. Malgré ses nombreux bienfaits, il est recommandé de consulter un professionnel de santé avant un usage thérapeutique. "
+  },
+  {
+    "pic": 4,
+    "name": "Jujibier",
+    "price": 600,
+    "description": "Le jujubier, connu pour ses fruits nutritifs appelés jujubes, a de nombreuses propriétés bénéfiques. Les fruits sont riches en vitamines C et A, en antioxydants, et en fibres, soutenant le système immunitaire et la digestion. Les feuilles et les fruits du jujubier possèdent des propriétés anti-inflammatoires et antimicrobiennes. Utilisé en médecine traditionnelle, le jujubier aide à traiter l'insomnie, l'anxiété, et les troubles digestifs. Les graines sont réputées pour leurs effets calmants et sédatifs. En cuisine, les fruits sont consommés frais, séchés ou en confiture. Bien que le jujubier ait de nombreux bienfaits, il est conseillé de consulter un professionnel de santé avant tout usage thérapeutique."
+  },
+  {
+    "pic": 5,
+    "name": "Moringa",
+    "price": 500,
+    "description": "Le moringa, appelé « arbre miracle », est une plante aux propriétés nutritionnelles et médicinales remarquables. Ses feuilles sont riches en vitamines A, C, E, en minéraux comme le calcium et le fer, ainsi qu'en protéines et fibres. Il contient des antioxydants puissants, et possède des propriétés anti-inflammatoires, antimicrobiennes, et antidiabétiques. Le moringa peut améliorer la santé cardiovasculaire, renforcer le système immunitaire, et offrir une protection neuroprotectrice. Utilisé en médecine traditionnelle pour divers troubles, il est aussi consommé en cuisine sous forme de feuilles, graines, ou huile. Malgré ses bienfaits, il est conseillé de consulter un professionnel de santé avant de l'utiliser à des fins thérapeutiques."
+  },
+  {
+    "pic": 6,
+    "name": "Papayer",
+    "price": 1500,
+    "description": "Le papayer, connu pour ses fruits délicieux, possède aussi de nombreuses propriétés nutritionnelles et médicinales. Le fruit, la papaye, est riche en vitamines A, C, et E, ainsi qu'en fibres et en antioxydants, favorisant une bonne digestion et un système immunitaire fort. Les feuilles de papayer contiennent des enzymes comme la papaïne, qui aident à la digestion et ont des propriétés anti-inflammatoires. Le papayer a des effets antimicrobiens et est utilisé traditionnellement pour traiter des problèmes digestifs, des infections cutanées, et des inflammations. Les graines de papaye ont des propriétés antiparasitaires. Utilisée en cuisine et en médecine traditionnelle, cette plante est précieuse, mais une consultation médicale est recommandée avant usage thérapeutique."
+  },
+  {
+    "pic": 7,
+    "name": "Manguier Greffé",
+    "price": 1000,
+    "description": "La mangue greffée, résultat de la greffe de différentes variétés de mangues sur un porte-greffe, offre une multitude de bienfaits nutritionnels et gustatifs. Les mangues greffées conservent les mêmes propriétés nutritionnelles que les mangues traditionnelles, riches en vitamines A, C et E, en antioxydants et en fibres, favorisant la santé de la peau, la digestion et le système immunitaire. En outre, elles présentent une variété de saveurs et de textures, selon la variété greffée. La greffe permet de sélectionner des caractéristiques spécifiques telles que la taille, la couleur et la douceur du fruit. Les mangues greffées sont appréciées pour leur goût sucré et leur texture juteuse, idéales pour une consommation fraîche ou dans une variété de plats et de desserts. Toutefois, malgré leurs nombreux avantages, il est recommandé de consulter un professionnel de la santé avant un usage thérapeutique."
+  }
+]
