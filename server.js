@@ -46,7 +46,6 @@ app.get("/api/getFactures", async (req, res) => {
 
 app.put("/api/getFactures/:id", async (req, res) => {
   const { id } = req.params;
-  console.log(id);
   try {
     const data = await Facture.findOneAndUpdate({ _id: id }, { livrer: true });
     res.status(200).json(data);
@@ -89,8 +88,7 @@ app.post("/api/paiement", async (req, res) => {
     };
     const result = await paiement(paymentSheet);
     const factureFinal = await facture(result.reference);
-    console.log(factureFinal);
-    if (factureFinal.status) {
+    if (factureFinal.status === 'succeeded' ) {
       await createFacture(factureData);
     }
     res.status(200).json(factureFinal);
