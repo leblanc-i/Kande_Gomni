@@ -6,7 +6,7 @@ export async function paiement(datas) {
     method: "POST",
     headers: {
       "Ipay-Payment-Type": "mobile",
-      "Ipay-Target-Environment": "sandbox",
+      "Ipay-Target-Environment": "live",
       Authorization: `Bearer ${process.env.SECRETKEY}`,
       "Content-Type": "application/json",
     },
@@ -21,7 +21,7 @@ export async function facture(reference) {
       method: "GET",
       headers: {
         "Ipay-Payment-Type": "mobile",
-        "Ipay-Target-Environment": "sandbox",
+        "Ipay-Target-Environment": "live",
         Authorization: `Bearer ${process.env.SECRETKEY}`,
         "Content-Type": "application/json",
       },
