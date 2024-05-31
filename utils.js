@@ -12,7 +12,6 @@ export async function paiement(datas) {
     },
     body: JSON.stringify(datas),
   });
-  console.log('paiement',response);
   return await response.json();
 }
 export async function facture(reference) {
@@ -28,7 +27,6 @@ export async function facture(reference) {
       },
     }
   );
-  console.log('facture',response);
   return await response.json();
 }
 
