@@ -88,9 +88,6 @@ app.post("/api/paiement", async (req, res) => {
     };
     const result = await paiement(paymentSheet);
     const factureFinal = await facture(result.reference);
-    if (factureFinal.status === 'succeeded' ) {
-      await createFacture(factureData);
-    }
     res.status(200).json(factureFinal);
   } catch (error) {
     res.status(400).json({
@@ -98,7 +95,17 @@ app.post("/api/paiement", async (req, res) => {
     });
   }
 });
-
+app.get("/api/paiement/status/:id", async (req, res) => {
+  const {id} = req.params
+  try {
+    const factureFinal = await facture(id);
+    return res.status(200).json(factureFinal);
+  } catch (error) {
+    res.status(400).json({
+      message: error.message,
+    });
+  }
+});
 async function loadDatas() {
   try {
     const data = await fs.readFile(dbPath, "utf-8");
