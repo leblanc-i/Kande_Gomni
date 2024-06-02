@@ -15,5 +15,7 @@ const factureSchema = new Schema({
   ],
   montantTotal: Number,
   livrer: Boolean,
+  reference: String,
+  solded: Boolean,
 });
 export const Facture = mongoose.model("FactureSchema", factureSchema);

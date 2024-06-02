@@ -11,13 +11,12 @@ import {
   createFacture,
 } from "./utils.js";
 import { Facture } from "./model/facture.schema.js";
-
+import { cleanData } from "./middleware/cleanFailedFacture.js";
 const app = express();
 const PORT = 3000;
 
 app.use(cors());
 app.use(express.json()); // Midlewere qui convertisse le données que nous avons reçu depuis le frontend.
-
 const __filename = fileURLToPath(import.meta.url); // Nous donne le chemin de notre fichier
 const __dirname = path.dirname(__filename); // On recupere notre dossier
 
@@ -26,7 +25,7 @@ app.get("/", async (req, res) => {
   res.send("Hello");
 });
 
-app.get("/api/getProducts", async (req, res) => {
+app.get("/api/getProducts",cleanData, async (req, res) => {
   try {
     const datas = await loadDatas();
     res.status(200).json(datas);
@@ -35,9 +34,9 @@ app.get("/api/getProducts", async (req, res) => {
   }
 });
 
-app.get("/api/getFactures", async (req, res) => {
+app.get("/api/getFactures",cleanData, async (req, res) => {
   try {
-    const datas = await Facture.find();
+    const datas = await Facture.find({solded: true});
     res.status(200).json(datas);
   } catch (error) {
     res.status(500).json({ message: "Oops !, une erreur s'est produite." });
@@ -71,13 +70,6 @@ app.post("/api/paiement", async (req, res) => {
   try {
     const data = await loadDatas();
     const totale = amountValue(req.body.panier, data);
-    const factureData = {
-      nom: req.body.customer_name,
-      number: req.body.msisdn,
-      panier: req.body.panier,
-      montantTotal: totale,
-      livrer: false,
-    };
     const paymentSheet = {
       customer_name: req.body.customer_name,
       currency: req.body.currency,
@@ -87,6 +79,16 @@ app.post("/api/paiement", async (req, res) => {
       msisdn: req.body.msisdn,
     };
     const result = await paiement(paymentSheet);
+    const factureData = {
+      nom: req.body.customer_name,
+      number: req.body.msisdn,
+      panier: req.body.panier,
+      montantTotal: totale,
+      livrer: false,
+      reference: result.reference,
+      solded: false,
+    };
+    await createFacture(factureData);
     const factureFinal = await facture(result.reference);
     res.status(200).json(factureFinal);
   } catch (error) {
@@ -96,9 +98,15 @@ app.post("/api/paiement", async (req, res) => {
   }
 });
 app.get("/api/paiement/status/:id", async (req, res) => {
-  const {id} = req.params
+  const { id } = req.params;
   try {
     const factureFinal = await facture(id);
+    if (factureFinal.status === "succeeded") {
+      await Facture.findOneAndUpdate({ reference: id }, { solded: true });
+    }
+    if (factureFinal.status === "failed") {
+      await Facture.findOneAndDelete({ reference: id });
+    }
     return res.status(200).json(factureFinal);
   } catch (error) {
     res.status(400).json({
